@@ -1,6 +1,10 @@
 h1 {
   margin: auto;
   color: #110c26;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+
 }
 
 nav {
