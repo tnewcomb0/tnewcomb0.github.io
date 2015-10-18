@@ -30,4 +30,18 @@ a:hover {
 
 * {
   background-color: #337907
+  font-family: PT Serif;
+}
+
+.smmarginbot {
+  margin-bottom: 4em;
+}
+
+footer {
+    display: inline;
+    margin-left: 47%;
+}
+
+.blogcenter {
+margin-left:40.5%;
 }
