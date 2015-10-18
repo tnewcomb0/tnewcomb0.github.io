@@ -9,7 +9,7 @@ h1 {
 
 nav {
     margin-left: 40%;
-    position: fixed;
+    position: absolute;
     margin-top: 3em;
     width: 50%;
 }
