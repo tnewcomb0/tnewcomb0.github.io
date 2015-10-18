@@ -29,7 +29,7 @@ a:hover {
 }
 
 * {
-  background-color: #337907
+  background-color: #337907;
   font-family: PT Serif;
 }
 
@@ -43,5 +43,23 @@ footer {
 }
 
 .blogcenter {
-margin-left:40.5%;
+margin-left:43%;
+}
+
+.blogfooter {
+    display: inline;
+    margin-left: 47%;
+    position: absolute;
+    margin-top: 15em;
+}
+
+.blogp {
+    position: absolute;
+    margin-top: 12em;
+    margin-left: 2em;
+}
+
+.blogul {
+    margin-top: 7em;
+    position: absolute;
 }
