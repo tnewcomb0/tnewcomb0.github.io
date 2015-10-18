@@ -1,0 +1,23 @@
+h1 {
+  margin: auto;
+  color: #110c26;
+}
+
+nav {
+  color: #0b17ff;
+  margin:auto;
+}
+
+a:visited {
+  color: #b01633;
+}
+
+a:hover {
+  color: #E87114;
+  text-decoration: bold;
+}
+
+.goalie {
+  height: 10em;
+  width: 10em;
+}
