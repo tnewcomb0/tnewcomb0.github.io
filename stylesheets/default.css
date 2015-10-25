@@ -1,10 +1,9 @@
-h1 {
-    text-align: center;
-    color: #110c26;
+* {
+  text-align: center;
 }
 
-nav {
-    text-align: center;
+h1 {
+    color: #110c26;
 }
 
 a:visited {
@@ -24,12 +23,4 @@ a:hover {
 * {
   background-color: #337907;
   font-family: PT Serif;
-}
-
-.text-center {
-  text-align: center;
-}
-
-footer {
-    text-align: center;
 }
