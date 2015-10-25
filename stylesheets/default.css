@@ -23,3 +23,8 @@ a:hover {
   font-family: PT Serif;
   text-align: center;
 }
+
+.list {
+  text-align: left;
+  margin-left: 5em;
+}
