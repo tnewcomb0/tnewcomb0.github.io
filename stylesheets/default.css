@@ -15,6 +15,7 @@ a:hover {
   height: 15em;
   width: 22.5em;
   display: block;
+  margin: auto;
 }
 
 * {
