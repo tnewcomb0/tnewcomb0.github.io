@@ -1,5 +1,6 @@
 h1 {
     color: #110c26;
+    text-align: left;
 }
 
 a:visited {
@@ -25,7 +26,11 @@ a:hover {
 }
 
 .nav {
-  margin-top: 4em;
-  margin-bottom: 2em;
   color: #194719;
+  text-align: right;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
 }
