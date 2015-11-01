@@ -17,16 +17,17 @@ a:hover {
   width: 22.5em;
   display: block;
   margin: auto;
+  clear:both;
 }
 
 * {
-  background-color: #C0FFFF;
+  background-color: white;
   font-family: PT Serif;
   text-align: center;
 }
 
 .nav {
-  color: #194719;
+  color: white;
   text-align: center;
 }
 
@@ -41,7 +42,7 @@ a:hover {
 .menu-title {
     float: left;
     margin-left: 3em;
-    margin-top: 1em;
+    margin-top: .5em;
     border: 3.5px solid black;
     padding: .3em .15em;
     font-family: sans-serif;
@@ -67,4 +68,13 @@ a:hover {
     vertical-align: top;
     color: black;
     display: inline-block;
+}
+
+.content {
+    clear: both;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    min-height: 1000px;
+    overflow: auto;
 }
