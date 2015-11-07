@@ -37,6 +37,7 @@ a:hover {
   height: 7em;
   background-color: white;
   overflow: hidden;
+  margin-top: -1em;
 }
 
 .menu-title {
@@ -83,7 +84,7 @@ a:hover {
     font-size: 1em;
     text-align: center;
     vertical-align: middle;
-    line-height: 205px;
+    margin-top: 8em;
 }
 
 .nz {
