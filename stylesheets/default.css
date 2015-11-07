@@ -89,4 +89,5 @@ a:hover {
 .nz {
   height: 15em;
   width: 22.5em;
+  display: inline-block;
 }
