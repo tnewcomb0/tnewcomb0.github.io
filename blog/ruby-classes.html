@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <title> Blog Week 5 </title>
+  </head>
+  <section>
+      <nav>
+        <div>
+          <a href="#">Projects</a> |
+          <a href="http://tnewcomb0.github.io/blog/index.html">Blog</a> |
+          <a href="#">Resume</a> |
+          <a href="http://tnewcomb0.github.io/about.html">About Me</a>
+        </div>
+      </nav>
+  </section>
+    <h1>Classes in Ruby</h1>
+  <body>
+    <p>
+      Ruby has this wonderful way to organize your code into neat segments of code called classes. Instead of having to call a bunch of methods seperately, you can bundle them all into a class and have them interact and reference each other. It also keeps them from being acted upon by code outside of the class, unless of course you so desire.Let's take a look at a real class and how it works:
+    </p></br>
+    <div><p>
+      class Greeter
+        attr_accessor :names
+
+        def initialize(name = Trevor)
+          @name = name
+        end
+
+        def say_hi
+            puts "Hello #{@name}!"
+        end
+    </br>
+      Using this syntax: greet = Greeter.new
+      greet.say_hi
+      We will get the class to output "Hello Trevor!"</br>
+
+      However, we can change the name input since we included the attr_accessor. So, if we want to say hello to Eva we would include this line before we call the method: greet.name = "Eva"
+
+      Now, instead of greeting Treovr it would greet Eva.</br>
+       Now, what is happening in our code? First, we are making the class, and with attr_accessor we are allowing the name variable to be both seen and changed outside of the class, which is why we are able to access it. Next, we initialze the class. This basically gives Ruby something to do with the class, we usually define an instance variable here, and this is where you input your parameters for the class. Then you can start defining methods for the class, as many as you want. Then, after closing out the class you just have to call it, like we did above.
+
+    </p></div></br>
+    <p> So there you have it, a very basic Ruby class and how it all works!</p>
+</html>
