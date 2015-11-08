@@ -32,11 +32,11 @@
           <div>  puts "Hello #{@name}!"</div>
         <div>end</div>
     </br>
-      Using this syntax: greet = Greeter.new
-      greet.say_hi
+      <div>Using this syntax:</div> <div>greet = Greeter.new</div>
+      <div>greet.say_hi</div>
       We will get the class to output "Hello Trevor!"</br>
 
-      However, we can change the name input since we included the attr_accessor. So, if we want to say hello to Eva we would include this line before we call the method: greet.name = "Eva"
+      <div>However, we can change the name input since we included the attr_accessor. So, if we want to say hello to Eva we would include this line before we call the method: greet.name = "Eva"</div>
 
       Now, instead of greeting Trevor it would greet Eva.</br>
        Now, what is happening in our code? First, we are making the class, and with attr_accessor we are allowing the name variable to be both seen and changed outside of the class, which is why we are able to access it. Next, we initialze the class. This basically gives Ruby something to do with the class, we usually define an instance variable here, and this is where you input your parameters for the class. Then you can start defining methods for the class, as many as you want. Then, after closing out the class you just have to call it, like we did above.
