@@ -20,28 +20,25 @@
     <p>
       Looping, also known as iterating, is a fundamental concept in any programming language. It is used to go through a set of data and apply some block of code to every element it is told to. There are many way to iterate through code so let's look at an example in each of the two languages and see how they compare.</br></p>
     <p>
-      <pre>
-        In Ruby we can use .map (or .each):
+
+        In Ruby we can use .each (or .map):
+        <pre>
         array = [1,2,3,4,5]
-          array.map {|placeholder| p placeholder * 2 }
+          array.each do |placeholder| p placeholder
         end
 </pre>
-          This will double each number in the array.
+          This will print each number in the array.
     </p>
     <p>
-        In JavaScript we can also iterate with a .map method, we need to do something like this:
+        In JavaScript we can also iterate, but we do it in a much different way. We need to do something like this:
         <pre>
-       function multiply(input) {
-        return input * 2;
-        }
-
-        var array = [1,2,3,4,5];
-        var myNewArray = array.map(multiply);
-        console.log (myNewArray)
+         for (var i = 1; i < 6; i++){
+         console.log(i)
+       }
       </pre>
       </p>
       <p>
-      As you can see, Ruby allows you to do the same thing in a much more efficient way. In JavaScript we needed to create a function and create 2 different variables in order to accomplish the same thing as Ruby. In addition to the differences in syntax there is just a lot more flexibility in Ruby. However, knowing how methods work in either language can help you understand how they work in the other. Even if they don't do exactly the same thing they are usually close enough to give you a good idea. It's similar to the differences between many of the romance languages. For example, if you know Italian you can figure out many words in Spanish, as they are quite similar.
+      As you can see, Ruby allows you to do the same thing in a much more efficient way. In JavaScript we needed to create a for loop and create a counter in order to accomplish the same thing as Ruby. In addition to the differences in syntax there is just a lot more flexibility in Ruby. However, knowing how methods work in either language can help you understand how they work in the other. Even if they don't do exactly the same thing they are usually close enough to give you a good idea. It's similar to the differences between many of the romance languages. For example, if you know Italian you can figure out many words in Spanish, as they are quite similar.
     </p>
 </body>
 </html>
