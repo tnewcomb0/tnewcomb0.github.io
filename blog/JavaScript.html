@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <title> Blog Week 5 </title>
+  </head>
+  <section>
+      <nav>
+        <div>
+          <a href="#">Projects</a> |
+          <a href="http://tnewcomb0.github.io/blog/index.html">Blog</a> |
+          <a href="#">Resume</a> |
+          <a href="http://tnewcomb0.github.io/about.html">About Me</a>
+        </div>
+      </nav>
+  </section>
+    <h1>Looping in JavaScript Versus Looping in Ruby</h1>
+  <body>
+    <p>
+      Looping, also known as iterating, is a fundamental concept in any programming language. It is used to go through a set of data and apply some block of code to every element it is told to. There are many way to iterate through code so let's look at an example in each of the two languages and see how they compare.</br></p>
+    <p>
+      <pre>
+        In Ruby we can use .map (or .each):
+        array = [1,2,3,4,5]
+          array.map {|placeholder| p placeholder * 2 }
+        end
+
+          This will double each number in the array.
+    </p>
+    <p>
+        In JavaScript we can also iterate with a .map method, we need to do something like this:
+        <pre>
+       function multiply(input) {
+        return input * 2;
+        }
+
+        var array = [1,2,3,4,5];
+        var myNewArray = array.map(multiply);
+        console.log (myNewArray)
+      </p>
+      <p>
+      As you can see, Ruby allows you to do the same thing in a much more efficient way. In JavaScript we needed to create a function and create 2 different variables in order to accomplish the same thing as Ruby. In addition to the differences in syntax there is just a lot more flexibility in Ruby. However, knowing how methods work in either language can help you understand how they work in the other. Even if they don't do exactly the same thing they are usually close enough to give you a good idea. It's similar to the differences between many of the romance languages. For example, if you know Italian you can figure out many words in Spanish, as they are quite similar.
+    </p>
+
+</html>
