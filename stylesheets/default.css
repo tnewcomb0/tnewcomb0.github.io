@@ -93,3 +93,7 @@ a:hover {
   display: inline-block;
   margin-right: 1em;
 }
+
+.left {
+  text-align: left;
+}
