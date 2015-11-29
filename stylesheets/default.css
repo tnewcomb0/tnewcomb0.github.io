@@ -97,3 +97,8 @@ a:hover {
 .left {
   text-align: left;
 }
+
+.small-button {
+  height: 32px;
+  width: 32px;
+}
