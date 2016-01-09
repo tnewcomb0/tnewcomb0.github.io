@@ -29,7 +29,6 @@ a:hover {
 }
 
 * {
-  font-family: PT Serif;
   text-align: center;
 }
 
@@ -71,6 +70,7 @@ a:hover {
 
 .font-awesome {
 font-family: 'Amatic SC', cursive;
+font-size: 1.5em;
 }
 
 .menu li a {
