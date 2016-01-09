@@ -9,6 +9,7 @@ a {
 
 ul {
   list-style-type: none;
+  margin-right: 40px;
 }
 
 a:visited {
