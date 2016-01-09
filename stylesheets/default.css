@@ -3,6 +3,10 @@ h1 {
     text-align: center;
 }
 
+a {
+  font-family: 'IM Fell Double Pica SC', serif;
+}
+
 a:visited {
   color: #0A4784;
 }
