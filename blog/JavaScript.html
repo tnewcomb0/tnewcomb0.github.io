@@ -1,54 +1,52 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
-    <title> Blog Week 5 </title>
-  </head>
-  <section>
-      <header class="header">
-        <nav>
-          <div>
-            <h1 class="menu-title">Trevor Newcomb</h1>
-            <ul class="menu">
-              <li><a href="http://tnewcomb0.github.io/">Home</a></li>
-              <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
-              <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
-              <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
-              <li><a href="#"><img class ="small-button" src="imgs/twitter.png"></a></li>
-              <li><a href="#" class="lnk-in"><img class ="small-button" src="imgs/linkedin.png"></a></li>
-              <li><a href="https://www.facebook.com/trevor.k.newcomb"><img class ="small-button" src="imgs/facebook.png"></a></li>
-              <li><a href="https://github.com/tnewcomb0"><img class ="small-button" src="imgs/github.png"></a></li>
-              <li><a href="mailto:tnewcomb0@gmail.com?Subject=Greetings"><img class ="small-button" src="imgs/Email.png"></a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-  </section>
-    <h1>Looping in JavaScript Versus Looping in Ruby</h1>
-  <body>
-    <p>
-      Looping, also known as iterating, is a fundamental concept in any programming language. It is used to go through a set of data and apply some block of code to every element it is told to. There are many way to iterate through code so let's look at an example in each of the two languages and see how they compare.</br></p>
+<head>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <title> Blog Week 5 </title>
+</head>
+<header class="header">
+  <nav>
+    <div>
+      <h1 class="menu-title">Trevor Newcomb</h1>
+      <ul class="menu">
+        <li><a href="http://tnewcomb0.github.io/">Home</a></li>
+        <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
+        <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
+        <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
+        <li><a href="#"><img class ="small-button" src="../imgs/twitter.png"></a></li>
+        <li><a href="#" class="lnk-in"><img class ="small-button" src="../imgs/linkedin.png"></a></li>
+        <li><a href="https://www.facebook.com/trevor.k.newcomb"><img class ="small-button" src="../imgs/facebook.png"></a></li>
+        <li><a href="https://github.com/tnewcomb0"><img class ="small-button" src="../imgs/github.png"></a></li>
+        <li><a href="mailto:tnewcomb0@gmail.com?Subject=Greetings"><img class ="small-button" src="../imgs/Email.png"></a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<h1>Looping in JavaScript Versus Looping in Ruby</h1>
+<body>
+  <p>
+    Looping, also known as iterating, is a fundamental concept in any programming language. It is used to go through a set of data and apply some block of code to every element it is told to. There are many way to iterate through code so let's look at an example in each of the two languages and see how they compare.</br></p>
     <p>
 
-        In Ruby we can use .each (or .map):
-        <pre>
+      In Ruby we can use .each (or .map):
+      <pre>
         array = [1,2,3,4,5]
-          array.each do |placeholder| p placeholder
+        array.each do |placeholder| p placeholder
         end
-</pre>
-          This will print each number in the array.
+      </pre>
+      This will print each number in the array.
     </p>
     <p>
-        In JavaScript we can also iterate, but we do it in a much different way. We need to do something like this:
-        <pre>
-         for (var i = 1; i < 6; i++){
-         console.log(i)
-       }
-      </pre>
-      </p>
-      <p>
-      As you can see, Ruby allows you to do the same thing in a much more efficient way. In JavaScript we needed to create a for loop and create a counter in order to accomplish the same thing as Ruby. In addition to the differences in syntax there is just a lot more flexibility in Ruby. However, knowing how methods work in either language can help you understand how they work in the other. Even if they don't do exactly the same thing they are usually close enough to give you a good idea. It's similar to the differences between many of the romance languages. For example, if you know Italian you can figure out many words in Spanish, as they are quite similar.
-    </p>
+      In JavaScript we can also iterate, but we do it in a much different way. We need to do something like this:
+      <pre>
+       for (var i = 1; i < 6; i++){
+       console.log(i)
+     }
+   </pre>
+ </p>
+ <p>
+  As you can see, Ruby allows you to do the same thing in a much more efficient way. In JavaScript we needed to create a for loop and create a counter in order to accomplish the same thing as Ruby. In addition to the differences in syntax there is just a lot more flexibility in Ruby. However, knowing how methods work in either language can help you understand how they work in the other. Even if they don't do exactly the same thing they are usually close enough to give you a good idea. It's similar to the differences between many of the romance languages. For example, if you know Italian you can figure out many words in Spanish, as they are quite similar.
+</p>
 </body>
 </html>

@@ -1,57 +1,55 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
-    <title> Blog Week 5 </title>
-  </head>
-  <section>
-      <header class="header">
-        <nav>
-          <div>
-            <h1 class="menu-title">Trevor Newcomb</h1>
-            <ul class="menu">
-              <li><a href="http://tnewcomb0.github.io/">Home</a></li>
-              <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
-              <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
-              <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
-              <li><a href="#"><img class ="small-button" src="imgs/twitter.png"></a></li>
-              <li><a href="#" class="lnk-in"><img class ="small-button" src="imgs/linkedin.png"></a></li>
-              <li><a href="https://www.facebook.com/trevor.k.newcomb"><img class ="small-button" src="imgs/facebook.png"></a></li>
-              <li><a href="https://github.com/tnewcomb0"><img class ="small-button" src="imgs/github.png"></a></li>
-              <li><a href="mailto:tnewcomb0@gmail.com?Subject=Greetings"><img class ="small-button" src="imgs/Email.png"></a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-  </section>
-    <h1>Classes in Ruby</h1>
-  <body>
-    <p>
-      Ruby has this wonderful way to organize your code into neat segments of code called classes. Instead of having to call a bunch of methods seperately, you can bundle them all into a class and have them interact and reference each other. It also keeps them from being acted upon by code outside of the class, unless of course you so desire.Let's take a look at a real class and how it works:
-    </p></br>
-    <pre>
-      class Greeter
-        attr_accessor :names
+<head>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <title> Blog Week 5 </title>
+</head>
+<header class="header">
+  <nav>
+    <div>
+      <h1 class="menu-title">Trevor Newcomb</h1>
+      <ul class="menu">
+        <li><a href="http://tnewcomb0.github.io/">Home</a></li>
+        <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
+        <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
+        <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
+        <li><a href="#"><img class ="small-button" src="../imgs/twitter.png"></a></li>
+        <li><a href="#" class="lnk-in"><img class ="small-button" src="../imgs/linkedin.png"></a></li>
+        <li><a href="https://www.facebook.com/trevor.k.newcomb"><img class ="small-button" src="../imgs/facebook.png"></a></li>
+        <li><a href="https://github.com/tnewcomb0"><img class ="small-button" src="../imgs/github.png"></a></li>
+        <li><a href="mailto:tnewcomb0@gmail.com?Subject=Greetings"><img class ="small-button" src="../imgs/Email.png"></a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<h1>Classes in Ruby</h1>
+<body>
+  <p>
+    Ruby has this wonderful way to organize your code into neat segments of code called classes. Instead of having to call a bunch of methods seperately, you can bundle them all into a class and have them interact and reference each other. It also keeps them from being acted upon by code outside of the class, unless of course you so desire.Let's take a look at a real class and how it works:
+  </p></br>
+  <pre>
+    class Greeter
+    attr_accessor :names
 
-        def initialize(name = Trevor)
-          @name = name
-        end
+    def initialize(name = Trevor)
+    @name = name
+    end
 
-        def say_hi
-          puts "Hello #{@name}!"
-        end
-      </pre>
-    </br><div>
-      <div>Using this syntax:</div> <div>greet = Greeter.new</div>
-      <div>greet.say_hi</div>
-      We will get the class to output "Hello Trevor!"</br>
+    def say_hi
+    puts "Hello #{@name}!"
+    end
+  </pre>
+</br><div>
+<div>Using this syntax:</div> <div>greet = Greeter.new</div>
+<div>greet.say_hi</div>
+We will get the class to output "Hello Trevor!"</br>
 
-      <div>However, we can change the name input since we included the attr_accessor. So, if we want to say hello to Eva we would include this line before we call the method: greet.name = "Eva"</div>
+<div>However, we can change the name input since we included the attr_accessor. So, if we want to say hello to Eva we would include this line before we call the method: greet.name = "Eva"</div>
 
-      Now, instead of greeting Trevor it would greet Eva.</br>
-       Now, what is happening in our code? First, we are making the class, and with attr_accessor we are allowing the name variable to be both seen and changed outside of the class, which is why we are able to access it. Next, we initialze the class. This basically gives Ruby something to do with the class, we usually define an instance variable here, and this is where you input your parameters for the class. Then you can start defining methods for the class, as many as you want. Then, after closing out the class you just have to call it, like we did above.
+Now, instead of greeting Trevor it would greet Eva.</br>
+Now, what is happening in our code? First, we are making the class, and with attr_accessor we are allowing the name variable to be both seen and changed outside of the class, which is why we are able to access it. Next, we initialze the class. This basically gives Ruby something to do with the class, we usually define an instance variable here, and this is where you input your parameters for the class. Then you can start defining methods for the class, as many as you want. Then, after closing out the class you just have to call it, like we did above.
 
-    </p></div></br>
-    <p> So there you have it, a very basic Ruby class and how it all works!</p>
+</p></div></br>
+<p> So there you have it, a very basic Ruby class and how it all works!</p>
 </html>

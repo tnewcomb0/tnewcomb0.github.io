@@ -1,57 +1,57 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
-    <title> Blog Week 4 </title>
-  </head>
-  <section>
-      <header class="header">
-        <nav>
-          <div>
-            <h1 class="menu-title">Trevor Newcomb</h1>
-            <ul class="menu">
-              <li><a href="http://tnewcomb0.github.io/">Home</a></li>
-              <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
-              <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
-              <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
-              <li><a href="#"><img class ="small-button" src="imgs/twitter.png"></a></li>
-              <li><a href="#" class="lnk-in"><img class ="small-button" src="imgs/linkedin.png"></a></li>
-              <li><a href="https://www.facebook.com/trevor.k.newcomb"><img class ="small-button" src="imgs/facebook.png"></a></li>
-              <li><a href="https://github.com/tnewcomb0"><img class ="small-button" src="imgs/github.png"></a></li>
-              <li><a href="mailto:tnewcomb0@gmail.com?Subject=Greetings"><img class ="small-button" src="imgs/Email.png"></a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-  </section>
-    <h1>Arrays and Hashes</h1>
-  <body>
-    <p>
-      Ruby has two similar elements, arrays and hashes, that at first glance look quite similar. Both contain multiple items, such as integers (whole numbers), floats (numbers with decimal points), and strings (words). The main difference, however, is that a hash contains paired values (such as a name paired with an address).
-</p>
-<p>
-      First, lets look at arrays. Arrays look like this:
+<head>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <title> Blog Week 4 </title>
+</head>
+<section>
+  <header class="header">
+    <nav>
+      <div>
+        <h1 class="menu-title">Trevor Newcomb</h1>
+        <ul class="menu">
+          <li><a href="http://tnewcomb0.github.io/">Home</a></li>
+          <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
+          <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
+          <li><a href="#"><img class ="small-button" src="../imgs/twitter.png"></a></li>
+          <li><a href="#" class="lnk-in"><img class ="small-button" src="../imgs/linkedin.png"></a></li>
+          <li><a href="https://www.facebook.com/trevor.k.newcomb"><img class ="small-button" src="../imgs/facebook.png"></a></li>
+          <li><a href="https://github.com/tnewcomb0"><img class ="small-button" src="../imgs/github.png"></a></li>
+          <li><a href="mailto:tnewcomb0@gmail.com?Subject=Greetings"><img class ="small-button" src="../imgs/Email.png"></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</section>
+<h1>Arrays and Hashes</h1>
+<body>
+  <p>
+    Ruby has two similar elements, arrays and hashes, that at first glance look quite similar. Both contain multiple items, such as integers (whole numbers), floats (numbers with decimal points), and strings (words). The main difference, however, is that a hash contains paired values (such as a name paired with an address).
+  </p>
+  <p>
+    First, lets look at arrays. Arrays look like this:
 
-      <br>
+    <br>
+    <div>
+     random_array = [1, "cheese", "18.7", "panda"]
+   </div>
+   <br>
+ </p>
+ <p>
+  Basically, this is a list containing the integer 1, the string "cheese", the string "18.7", and the string "panda". Arrays are constructed so that you can access the values or items in them with a cooresponding index number. An index number is just a value that is automatically assigned, by Ruby, to each item in an array. So, in our example array: 1 would be assigned the index 0, "cheese" would be assigned the index 1, "18.7" would be assigned the index 2, and "panda" would be assigned the index 3. To access one of them you would use the command random_array[2], and that would give you "18.7". You may notice that the index does not start at one, rather it starts at 0. Arrays have many uses, and are used everywhere in Ruby.
+</p>
+<br>
+<p>
+  Next, hashes are a close cousin to arrays. Instead of using an automatically assigned index however, hashes get both their index number and its value assigned by the coder. It also goes by slightly different syntax. You call them keyes and values, so a key/value pair. A hash would look like this:
+</p>
+<br>
 <div>
-       random_array = [1, "cheese", "18.7", "panda"]
+ random_hash = { "twenty" => 20, "thirty" => 30 }
 </div>
-      <br>
-</p>
+<br>
 <p>
-        Basically, this is a list containing the integer 1, the string "cheese", the string "18.7", and the string "panda". Arrays are constructed so that you can access the values or items in them with a cooresponding index number. An index number is just a value that is automatically assigned, by Ruby, to each item in an array. So, in our example array: 1 would be assigned the index 0, "cheese" would be assigned the index 1, "18.7" would be assigned the index 2, and "panda" would be assigned the index 3. To access one of them you would use the command random_array[2], and that would give you "18.7". You may notice that the index does not start at one, rather it starts at 0. Arrays have many uses, and are used everywhere in Ruby.
+  Obviously this wouldn't be a very useful hash, but it demonstrates how they work well. So, the key "twenty" has its value of 20, and the key "thirty" has its value of 30. Hashes are a nice alternative because you can store data that you want to be paired with something else. A few examples of this would be usernames and passwords, names and phone numbers, and widths and heights. It provides a quick and easy way to store information that you want kept together.
 </p>
-      <br>
-<p>
-      Next, hashes are a close cousin to arrays. Instead of using an automatically assigned index however, hashes get both their index number and its value assigned by the coder. It also goes by slightly different syntax. You call them keyes and values, so a key/value pair. A hash would look like this:
-</p>
-      <br>
-<div>
-       random_hash = { "twenty" => 20, "thirty" => 30 }
-</div>
-       <br>
-<p>
-        Obviously this wouldn't be a very useful hash, but it demonstrates how they work well. So, the key "twenty" has its value of 20, and the key "thirty" has its value of 30. Hashes are a nice alternative because you can store data that you want to be paired with something else. A few examples of this would be usernames and passwords, names and phone numbers, and widths and heights. It provides a quick and easy way to store information that you want kept together.
-    </p>
 </html>

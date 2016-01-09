@@ -1,52 +1,52 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
-    <title> Enumerables </title>
-  </head>
-  <section>
-      <header class="header">
-        <nav>
-          <div>
-            <h1 class="menu-title">Trevor Newcomb</h1>
-            <ul class="menu">
-              <li><a href="http://tnewcomb0.github.io/">Home</a></li>
-              <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
-              <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
-              <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
-              <li><a href="#"><img class ="small-button" src="imgs/twitter.png"></a></li>
-              <li><a href="#" class="lnk-in"><img class ="small-button" src="imgs/linkedin.png"></a></li>
-              <li><a href="https://www.facebook.com/trevor.k.newcomb"><img class ="small-button" src="imgs/facebook.png"></a></li>
-              <li><a href="https://github.com/tnewcomb0"><img class ="small-button" src="imgs/github.png"></a></li>
-              <li><a href="mailto:tnewcomb0@gmail.com?Subject=Greetings"><img class ="small-button" src="imgs/Email.png"></a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-  </section>
-    <h1>The .inject Method</h1>
-  <body>
-    <p>
-      The enumerable module in Ruby puts many new methods at your disposal. It was pretty hard to choose from them, as many of them seem really useful. I decided to wrrite on one that may not see as much use as some of the others, but it still will be quite useful in certain situations. That method is called .inject.
-    </p>
-    <p>
-      The .inject method is used, in its simplest form, to input something between each element in an array. So, for example, if you wanted to multiply all the numbers in an array together, you could write something like this:
-    </p>
-    <p>
-      def multiply_me(array)</br>
-      x = array.inject(:*)</br>
-      p x</br>
-      end</br>
-      multiply_me([2,3,4])</br>
-      </br>
-      >>24
-    </p>
-    <p>
-      Now, let's walk through this step by step. First, we are defining a method called multiply_me and giving it a parameter of an array. We are then setting the new variable x equal to array.inject(:*), which will put a * (which is the multiplication symbol in Ruby) between each element in an array (we are also assuming that the array contains only numbers, otherwise we would have to include .to_i). Finally, .inject will also run the array with the injected symbol, so you will get a value returned, in this case 24, which is 2 * 3* 4.
-    </p>
-    <p>
-      This is only a very simple way to use .inject, it has many more uses beyond just putting in math symbols, but I'll leave you to look into those on your own!
-    </p>
-  </body>
-  </html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <title> Enumerables </title>
+</head>
+<section>
+  <header class="header">
+    <nav>
+      <div>
+        <h1 class="menu-title">Trevor Newcomb</h1>
+        <ul class="menu">
+          <li><a href="http://tnewcomb0.github.io/">Home</a></li>
+          <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
+          <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
+          <li><a href="#"><img class ="small-button" src="../imgs/twitter.png"></a></li>
+          <li><a href="#" class="lnk-in"><img class ="small-button" src="../imgs/linkedin.png"></a></li>
+          <li><a href="https://www.facebook.com/trevor.k.newcomb"><img class ="small-button" src="../imgs/facebook.png"></a></li>
+          <li><a href="https://github.com/tnewcomb0"><img class ="small-button" src="../imgs/github.png"></a></li>
+          <li><a href="mailto:tnewcomb0@gmail.com?Subject=Greetings"><img class ="small-button" src="../imgs/Email.png"></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</section>
+<h1>The .inject Method</h1>
+<body>
+  <p>
+    The enumerable module in Ruby puts many new methods at your disposal. It was pretty hard to choose from them, as many of them seem really useful. I decided to wrrite on one that may not see as much use as some of the others, but it still will be quite useful in certain situations. That method is called .inject.
+  </p>
+  <p>
+    The .inject method is used, in its simplest form, to input something between each element in an array. So, for example, if you wanted to multiply all the numbers in an array together, you could write something like this:
+  </p>
+  <p>
+    def multiply_me(array)</br>
+    x = array.inject(:*)</br>
+    p x</br>
+    end</br>
+    multiply_me([2,3,4])</br>
+  </br>
+  >>24
+</p>
+<p>
+  Now, let's walk through this step by step. First, we are defining a method called multiply_me and giving it a parameter of an array. We are then setting the new variable x equal to array.inject(:*), which will put a * (which is the multiplication symbol in Ruby) between each element in an array (we are also assuming that the array contains only numbers, otherwise we would have to include .to_i). Finally, .inject will also run the array with the injected symbol, so you will get a value returned, in this case 24, which is 2 * 3* 4.
+</p>
+<p>
+  This is only a very simple way to use .inject, it has many more uses beyond just putting in math symbols, but I'll leave you to look into those on your own!
+</p>
+</body>
+</html>
