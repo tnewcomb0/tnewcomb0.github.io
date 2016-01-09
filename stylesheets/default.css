@@ -69,6 +69,10 @@ a:hover {
   padding: .3em;
 }
 
+.font-awesome {
+font-family: 'Amatic SC', cursive;
+}
+
 .menu li a {
   font-size: 1em;
   text-decoration: none;
