@@ -28,6 +28,7 @@ a:hover {
 .nav {
   color: white;
   text-align: center;
+  font-family: 'IM Fell Double Pica SC', serif;
 }
 
 .header {
@@ -52,6 +53,7 @@ a:hover {
   float: right;
   margin-right: 4em;
   margin-top: 3em;
+  font-family: 'IM Fell Double Pica SC', serif;
 }
 
 .menu li {
