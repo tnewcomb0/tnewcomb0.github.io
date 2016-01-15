@@ -1,39 +1,80 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-  <title>Week 1 Reflection</title>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Web Template">
+  <meta name="author" content="Trevor Newcomb">
+  <!-- Bootstrap CSS file -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica+SC' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <title> Trevor's DBC Website </title>
 </head>
-<header class="header">
-  <nav>
-    <div>
-      <h1 class="menu-title">Trevor Newcomb</h1>
-      <ul class="menu">
-        <li><a href="http://tnewcomb0.github.io/">Home</a></li>
-        <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
-        <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
-        <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
-        <li><a href="#"><img class ="small-button" src="../imgs/twitter.png"></a></li>
-        <li><a href="#" class="lnk-in"><img class ="small-button" src="../imgs/linkedin.png"></a></li>
-        <li><a href="https://www.facebook.com/trevor.k.newcomb"><img class ="small-button" src="../imgs/facebook.png"></a></li>
-        <li><a href="https://github.com/tnewcomb0"><img class ="small-button" src="../imgs/github.png"></a></li>
-        <li><a href="mailto:tnewcomb0@gmail.com?Subject=Greetings"><img class ="small-button" src="../imgs/Email.png"></a></li>
-      </ul>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://tnewcomb0.github.io/">Trevor Newcomb</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://tnewcomb0.github.io/">Home</a></li>
+          <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
+          <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <input type="text" class="form-control" placeholder="Search...">
+        </form>
+      </div>
     </div>
   </nav>
-</section>
-</header>
-<container>
-<h1>Using Git and Github</h1>
-<main>
-  <h2>Version control and its importance</h2>
-  <h4>October 3rd, 2015</h4>
+  <body>
 
-  <section>
-    <p>
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li><a href="http://tnewcomb0.github.io/blog/git.html">Git</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/html-reflection.html">HTML</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/css-concepts.html">CSS</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/arrays-hashes.html">Ruby- Arrays and Hashes</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/enumerable-methods.html">Ruby- The inject Method</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/ruby-classes.html">Ruby- Classes</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/JavaScript.html">JavaScript vs. Ruby</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/tech.html">How the Internet Works</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/website-reflection.html">A Reflection on my Website</a></li>
+        </ul>
+      </div>
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>Git</h1>
+              <div class="row">
+                <div class="group1 col-sm-6 col-md-6">
+                  <span class="glyphicon glyphicon-folder-open"></span>  <a href="#">Git</a>
+                  <span class="glyphicon glyphicon-bookmark"></span> <a href="#">Coding</a>, <a href="#">Git</a>
+                </div>
+                <div class="group2 col-sm-6 col-md-6">
+                  <span class="glyphicon glyphicon-pencil"></span> <a href="singlepost.html#comments">0 Comments</a>
+                  <span class="glyphicon glyphicon-time"></span> October 9th, 2015
+                </div>
+              </div>
+              <p>
       Version control provides many benefits for a user. It keeps your work saved at many different points to allow you to look back at changes you've made previously and see how they've affected your code. If mistakes were made it allows you to go back to a previous version and see where you went wrong, and when working on code that has gone live it allows you to keep working code running while you make changes. It also will keep you from losing massive amounts of work if your machine crashes, since you will be saving your work constantly. There is really nothing more frustrating than losing work and having to redo it all.
     </p>
     <p>
@@ -42,8 +83,18 @@
     <p>
       Github is the ideal way to store your code because it has a very clean and relatively easy to use interface, as well as not requiring much processing power from your machine. It is great because it will allow you to access your work from any device, anywhere. It is also nice that it allows multiple people to work on the same code without them tripping over each other. All in all, there are other services like Github, but Github seems to have the best combination of simplicity, reliability, and ease of use.
     </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
 
-    <!-- copy and paste as many sections as you want to add paragraphs -->
-  </section>
-</container>
-</main>
+    </div>
+    <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+  </body>
+  </html>
