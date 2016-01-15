@@ -1,56 +1,115 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Web Template">
+  <meta name="author" content="Trevor Newcomb">
+  <!-- Bootstrap CSS file -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica+SC' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
-  <title> Blog Week 5 </title>
+  <title> Trevor's DBC Website </title>
 </head>
-<header class="header">
-  <nav>
-    <div>
-      <h1 class="menu-title">Trevor Newcomb</h1>
-      <ul class="menu">
-        <li><a href="http://tnewcomb0.github.io/">Home</a></li>
-        <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
-        <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
-        <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
-        <li><a href="#"><img class ="small-button" src="../imgs/twitter.png"></a></li>
-        <li><a href="#" class="lnk-in"><img class ="small-button" src="../imgs/linkedin.png"></a></li>
-        <li><a href="https://www.facebook.com/trevor.k.newcomb"><img class ="small-button" src="../imgs/facebook.png"></a></li>
-        <li><a href="https://github.com/tnewcomb0"><img class ="small-button" src="../imgs/github.png"></a></li>
-        <li><a href="mailto:tnewcomb0@gmail.com?Subject=Greetings"><img class ="small-button" src="../imgs/Email.png"></a></li>
-      </ul>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://tnewcomb0.github.io/">Trevor Newcomb</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://tnewcomb0.github.io/">Home</a></li>
+          <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
+          <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <input type="text" class="form-control" placeholder="Search...">
+        </form>
+      </div>
     </div>
   </nav>
-</header>
-<container>
-<h1>Looping in JavaScript Versus Looping in Ruby</h1>
-<body>
-  <p>
-    Looping, also known as iterating, is a fundamental concept in any programming language. It is used to go through a set of data and apply some block of code to every element it is told to. There are many way to iterate through code so let's look at an example in each of the two languages and see how they compare.</br></p>
-    <p>
+  <body>
 
-      In Ruby we can use .each (or .map):
-      <pre>
-        array = [1,2,3,4,5]
-        array.each do |placeholder| p placeholder
-        end
-      </pre>
-      This will print each number in the array.
-    </p>
-    <p>
-      In JavaScript we can also iterate, but we do it in a much different way. We need to do something like this:
-      <pre>
-       for (var i = 1; i < 6; i++){
-       console.log(i)
-     }
-   </pre>
- </p>
- <p>
-  As you can see, Ruby allows you to do the same thing in a much more efficient way. In JavaScript we needed to create a for loop and create a counter in order to accomplish the same thing as Ruby. In addition to the differences in syntax there is just a lot more flexibility in Ruby. However, knowing how methods work in either language can help you understand how they work in the other. Even if they don't do exactly the same thing they are usually close enough to give you a good idea. It's similar to the differences between many of the romance languages. For example, if you know Italian you can figure out many words in Spanish, as they are quite similar.
-</p>
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li><a href="http://tnewcomb0.github.io/blog/git.html">Git</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/html-reflection.html">HTML</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/css-concepts.html">CSS</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/arrays-hashes.html">Ruby- Arrays and Hashes</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/enumerable-methods.html">Ruby- The inject Method</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/ruby-classes.html">Ruby- Classes</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/JavaScript.html">JavaScript vs. Ruby</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/tech.html">How the Internet Works</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/website-reflection.html">A Reflection on my Website</a></li>
+        </ul>
+      </div>
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>Looping in Javascript</h1>
+              <div class="row">
+                <div class="group1 col-sm-6 col-md-6">
+                  <span class="glyphicon glyphicon-folder-open"></span>  <a href="#">JS</a>
+                  <span class="glyphicon glyphicon-bookmark"></span> <a href="#">Coding</a>,
+                  <a href="#">JS</a>, <a href="#">Javascript</a>
+                </div>
+                <div class="group2 col-sm-6 col-md-6">
+                  <span class="glyphicon glyphicon-pencil"></span> <a href="singlepost.html#comments">0 Comments</a>
+                  <span class="glyphicon glyphicon-time"></span> November 20th, 2015
+                </div>
+              </div>
+              <p>
+                Looping, also known as iterating, is a fundamental concept in any programming language. It is used to go through a set of data and apply some block of code to every element it is told to. There are many way to iterate through code so let's look at an example in each of the two languages and see how they compare.</br></p>
+                <p>
+
+                  In Ruby we can use .each (or .map):
+                  <pre>
+                    array = [1,2,3,4,5]
+                    array.each do |placeholder| p placeholder
+                    end
+                  </pre>
+                  This will print each number in the array.
+                </p>
+                <p>
+                  In JavaScript we can also iterate, but we do it in a much different way. We need to do something like this:
+                  <pre>
+                   for (var i = 1; i < 6; i++){
+                   console.log(i)
+                 }
+               </pre>
+             </p>
+             <p>
+              As you can see, Ruby allows you to do the same thing in a much more efficient way. In JavaScript we needed to create a for loop and create a counter in order to accomplish the same thing as Ruby. In addition to the differences in syntax there is just a lot more flexibility in Ruby. However, knowing how methods work in either language can help you understand how they work in the other. Even if they don't do exactly the same thing they are usually close enough to give you a good idea. It's similar to the differences between many of the romance languages. For example, if you know Italian you can figure out many words in Spanish, as they are quite similar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <script>
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+  });
+  </script>
 </body>
-</container>
 </html>
