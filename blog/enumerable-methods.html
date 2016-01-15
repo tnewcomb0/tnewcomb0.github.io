@@ -1,56 +1,115 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Web Template">
+  <meta name="author" content="Trevor Newcomb">
+  <!-- Bootstrap CSS file -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica+SC' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
-  <title> Enumerables </title>
+  <title> Trevor's DBC Website </title>
 </head>
-<section>
-  <header class="header">
-    <nav>
-      <div>
-        <h1 class="menu-title">Trevor Newcomb</h1>
-        <ul class="menu">
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://tnewcomb0.github.io/">Trevor Newcomb</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
           <li><a href="http://tnewcomb0.github.io/">Home</a></li>
           <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
           <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
           <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
-          <li><a href="#"><img class ="small-button" src="../imgs/twitter.png"></a></li>
-          <li><a href="#" class="lnk-in"><img class ="small-button" src="../imgs/linkedin.png"></a></li>
-          <li><a href="https://www.facebook.com/trevor.k.newcomb"><img class ="small-button" src="../imgs/facebook.png"></a></li>
-          <li><a href="https://github.com/tnewcomb0"><img class ="small-button" src="../imgs/github.png"></a></li>
-          <li><a href="mailto:tnewcomb0@gmail.com?Subject=Greetings"><img class ="small-button" src="../imgs/Email.png"></a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <input type="text" class="form-control" placeholder="Search...">
+        </form>
+      </div>
+    </div>
+  </nav>
+  <body>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li><a href="http://tnewcomb0.github.io/blog/git.html">Git</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/html-reflection.html">HTML</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/css-concepts.html">CSS</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/arrays-hashes.html">Ruby- Arrays and Hashes</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/enumerable-methods.html">Ruby- The inject Method</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/ruby-classes.html">Ruby- Classes</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/JavaScript.html">JavaScript vs. Ruby</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/tech.html">How the Internet Works</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/website-reflection.html">A Reflection on my Website</a></li>
         </ul>
       </div>
-    </nav>
-  </header>
-</section>
-<container>
-<h1>The .inject Method</h1>
-<body>
-  <p>
-    The enumerable module in Ruby puts many new methods at your disposal. It was pretty hard to choose from them, as many of them seem really useful. I decided to write on one that may not see as much use as some of the others, but it still will be quite useful in certain situations. That method is called .inject.
-  </p>
-  <p>
-    The .inject method is used, in its simplest form, to input something between each element in an array. So, for example, if you wanted to multiply all the numbers in an array together, you could write something like this:
-  </p>
-  <p>
-    def multiply_me(array)</br>
-    x = array.inject(:*)</br>
-    p x</br>
-    end</br>
-    multiply_me([2,3,4])</br>
-  </br>
-  >>24
-</p>
-<p>
-  Now, let's walk through this step by step. First, we are defining a method called multiply_me and giving it a parameter of an array. We are then setting the new variable x equal to array.inject(:*), which will put a * (which is the multiplication symbol in Ruby) between each element in an array (we are also assuming that the array contains only numbers, otherwise we would have to include .to_i). Finally, .inject will also run the array with the injected symbol, so you will get a value returned, in this case 24, which is 2 * 3* 4.
-</p>
-<p>
-  This is only a very simple way to use .inject, it has many more uses beyond just putting in math symbols, but I'll leave you to look into those on your own!
-</p>
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>Ruby Enumerables - Inject</h1>
+              <div class="row">
+                <div class="group1 col-sm-6 col-md-6">
+                  <span class="glyphicon glyphicon-folder-open"></span>  <a href="#">Ruby</a>
+                  <span class="glyphicon glyphicon-bookmark"></span> <a href="#">Back-end</a>,
+                  <a href="#">Coding</a>, <a href="#">Ruby</a>
+                </div>
+                <div class="group2 col-sm-6 col-md-6">
+                  <span class="glyphicon glyphicon-pencil"></span> <a href="singlepost.html#comments">0 Comments</a>
+                  <span class="glyphicon glyphicon-time"></span> November 6th, 2015
+                </div>
+              </div>
+
+              <p>
+                The enumerable module in Ruby puts many new methods at your disposal. It was pretty hard to choose from them, as many of them seem really useful. I decided to write on one that may not see as much use as some of the others, but it still will be quite useful in certain situations. That method is called .inject.
+              </p>
+              <p>
+                The .inject method is used, in its simplest form, to input something between each element in an array. So, for example, if you wanted to multiply all the numbers in an array together, you could write something like this:
+              </p>
+              <p>
+                def multiply_me(array)</br>
+                x = array.inject(:*)</br>
+                p x</br>
+                end</br>
+                multiply_me([2,3,4])</br>
+              </br>
+              >>24
+            </p>
+            <p>
+              Now, let's walk through this step by step. First, we are defining a method called multiply_me and giving it a parameter of an array. We are then setting the new variable x equal to array.inject(:*), which will put a * (which is the multiplication symbol in Ruby) between each element in an array (we are also assuming that the array contains only numbers, otherwise we would have to include .to_i). Finally, .inject will also run the array with the injected symbol, so you will get a value returned, in this case 24, which is 2 * 3* 4.
+            </p>
+            <p>
+              This is only a very simple way to use .inject, it has many more uses beyond just putting in math symbols, but I'll leave you to look into those on your own!
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <script>
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+  });
+  </script>
 </body>
-</container>
 </html>

@@ -1,59 +1,119 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Web Template">
+  <meta name="author" content="Trevor Newcomb">
+  <!-- Bootstrap CSS file -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica+SC' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
-  <title> Blog Week 5 </title>
+  <title> Trevor's DBC Website </title>
 </head>
-<header class="header">
-  <nav>
-    <div>
-      <h1 class="menu-title">Trevor Newcomb</h1>
-      <ul class="menu">
-        <li><a href="http://tnewcomb0.github.io/">Home</a></li>
-        <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
-        <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
-        <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
-        <li><a href="#"><img class ="small-button" src="../imgs/twitter.png"></a></li>
-        <li><a href="#" class="lnk-in"><img class ="small-button" src="../imgs/linkedin.png"></a></li>
-        <li><a href="https://www.facebook.com/trevor.k.newcomb"><img class ="small-button" src="../imgs/facebook.png"></a></li>
-        <li><a href="https://github.com/tnewcomb0"><img class ="small-button" src="../imgs/github.png"></a></li>
-        <li><a href="mailto:tnewcomb0@gmail.com?Subject=Greetings"><img class ="small-button" src="../imgs/Email.png"></a></li>
-      </ul>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://tnewcomb0.github.io/">Trevor Newcomb</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://tnewcomb0.github.io/">Home</a></li>
+          <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
+          <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <input type="text" class="form-control" placeholder="Search...">
+        </form>
+      </div>
     </div>
   </nav>
-</header>
-<container>
-<h1>Classes in Ruby</h1>
-<body>
-  <p>
-    Ruby has this wonderful way to organize your code into neat segments of code called classes. Instead of having to call a bunch of methods seperately, you can bundle them all into a class and have them interact and reference each other. It also keeps them from being acted upon by code outside of the class, unless of course you so desire.Let's take a look at a real class and how it works:
-  </p></br>
-  <pre>
-    class Greeter
-    attr_accessor :names
+  <body>
 
-    def initialize(name = Trevor)
-    @name = name
-    end
+    <div id="wrapper">
 
-    def say_hi
-    puts "Hello #{@name}!"
-    end
-  </pre>
-</br><div>
-<div>Using this syntax:</div> <div>greet = Greeter.new</div>
-<div>greet.say_hi</div>
-We will get the class to output "Hello Trevor!"</br>
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li><a href="http://tnewcomb0.github.io/blog/git.html">Git</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/html-reflection.html">HTML</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/css-concepts.html">CSS</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/arrays-hashes.html">Ruby- Arrays and Hashes</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/enumerable-methods.html">Ruby- The inject Method</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/ruby-classes.html">Ruby- Classes</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/JavaScript.html">JavaScript vs. Ruby</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/tech.html">How the Internet Works</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/website-reflection.html">A Reflection on my Website</a></li>
+        </ul>
+      </div>
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>Ruby Classes</h1>
+              <div class="row">
+                <div class="group1 col-sm-6 col-md-6">
+                  <span class="glyphicon glyphicon-folder-open"></span>  <a href="#">Ruby</a>
+                  <span class="glyphicon glyphicon-bookmark"></span> <a href="#">Coding</a>,
+                  <a href="#">Ruby</a>, <a href="#">Back-end</a>
+                </div>
+                <div class="group2 col-sm-6 col-md-6">
+                  <span class="glyphicon glyphicon-pencil"></span> <a href="singlepost.html#comments">0 Comments</a>
+                  <span class="glyphicon glyphicon-time"></span> November 13th, 2015
+                </div>
+              </div>
+              <p>
+                Ruby has this wonderful way to organize your code into neat segments of code called classes. Instead of having to call a bunch of methods seperately, you can bundle them all into a class and have them interact and reference each other. It also keeps them from being acted upon by code outside of the class, unless of course you so desire.Let's take a look at a real class and how it works:
+              </p></br>
+              <pre>
+                class Greeter
+                attr_accessor :names
 
-<div>However, we can change the name input since we included the attr_accessor. So, if we want to say hello to Eva we would include this line before we call the method: greet.name = "Eva"</div>
+                def initialize(name = Trevor)
+                @name = name
+                end
 
-Now, instead of greeting Trevor it would greet Eva.</br>
-Now, what is happening in our code? First, we are making the class, and with attr_accessor we are allowing the name variable to be both seen and changed outside of the class, which is why we are able to access it. Next, we initialze the class. This basically gives Ruby something to do with the class, we usually define an instance variable here, and this is where you input your parameters for the class. Then you can start defining methods for the class, as many as you want. Then, after closing out the class you just have to call it, like we did above.
+                def say_hi
+                puts "Hello #{@name}!"
+                end
+              </pre>
+            </br><div>
+            <div>Using this syntax:</div> <div>greet = Greeter.new</div>
+            <div>greet.say_hi</div>
+            We will get the class to output "Hello Trevor!"</br>
 
-</p></div></br>
-<p> So there you have it, a very basic Ruby class and how it all works!</p>
-</container>
+            <div>However, we can change the name input since we included the attr_accessor. So, if we want to say hello to Eva we would include this line before we call the method: greet.name = "Eva"</div>
+
+            Now, instead of greeting Trevor it would greet Eva.</br>
+            Now, what is happening in our code? First, we are making the class, and with attr_accessor we are allowing the name variable to be both seen and changed outside of the class, which is why we are able to access it. Next, we initialze the class. This basically gives Ruby something to do with the class, we usually define an instance variable here, and this is where you input your parameters for the class. Then you can start defining methods for the class, as many as you want. Then, after closing out the class you just have to call it, like we did above.
+
+          </p></div></br>
+          <p> So there you have it, a very basic Ruby class and how it all works!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<script>
+$("#menu-toggle").click(function(e) {
+  e.preventDefault();
+  $("#wrapper").toggleClass("toggled");
+});
+</script>
+</body>
 </html>
