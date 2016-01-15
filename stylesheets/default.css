@@ -29,11 +29,9 @@ font-family: 'Amatic SC', cursive;
 font-size: 1.5em;
 }
 
-.nz {
-  height: 15em;
-  width: 22.5em;
-  display: inline-block;
-  margin-right: 1em;
+.about-me-img {
+  height: 14em;
+  width: 20em;
 }
 
 /* Toggle Styles */
