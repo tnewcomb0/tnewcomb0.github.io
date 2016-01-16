@@ -18,6 +18,19 @@ a {
   margin: 4px;
 }
 
+.lead-text {
+  font-family: 'Overlock', cursive;
+}
+
+.body-text {
+font-family: 'Neucha', cursive;
+font-size: 1.25em;
+}
+
+.row h1 {
+  font-family: 'Poly', serif;
+}
+
 .nav-margin {
   margin-bottom: -23px;
   line-height: 60%;
