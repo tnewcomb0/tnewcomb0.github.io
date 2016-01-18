@@ -1,3 +1,8 @@
+body {
+  margin-top: 70px;
+  padding-bottom: 70px;
+}
+
 h1 {
     color: #110c26;
     text-align: center;
@@ -7,18 +12,33 @@ a {
   font-family: 'IM Fell Double Pica SC', serif;
 }
 
-ul {
-  list-style-type: none;
-  margin-right: 40px;
+.footer-text {
+  color: #EDEDED;
+  font-size: .7em;
+  margin: 4px;
 }
 
-a:visited {
-  color: #0A4784;
+.blog-text {
+font-family: 'Neucha', cursive;
+font-size: 1.2em;
 }
 
-a:hover {
-  color: #E87114;
-  text-decoration: none;
+.lead-text {
+  font-family: 'Overlock', cursive;
+}
+
+.body-text {
+font-family: 'Neucha', cursive;
+font-size: 1.25em;
+}
+
+.row h1 {
+  font-family: 'Poly', serif;
+}
+
+.nav-margin {
+  margin-bottom: -23px;
+  line-height: 60%;
 }
 
 .goalie {
@@ -29,87 +49,140 @@ a:hover {
   clear:both;
 }
 
-* {
-  text-align: center;
-}
-
 .nav {
-  color: white;
-  text-align: center;
   font-family: 'IM Fell Double Pica SC', serif;
 }
 
-.header {
-  width: 100%;
-  height: 7em;
-  background: linear-gradient(to bottom, rgba(4,108,140,1) 0%, rgba(188,224,238,1) 30%, rgba(255,255,255,1) 100%);
-  overflow: hidden;
-  margin-top: -1em;
-  clear: both;
+#about-font {
+  font-family: 'Josefin Slab', serif;
+    font-size: 1.4em;
+    overflow: auto;
 }
 
-.menu-title {
-  float: left;
-  margin-left: 3em;
-  margin-top: .5em;
-  font-family: 'IM Fell Double Pica SC', serif;
-  font-weight: bold;
-  font-size: 2.5em;
-  }
-
-.menu {
-  float: right;
-  margin-right: 4em;
-  margin-top: 3em;
-  font-family: 'IM Fell Double Pica SC', serif;
+.about-me-img {
+  height: 11em;
+  width: 15em;
+  margin-bottom: 1.5em;
 }
 
-.menu li {
-  display: inline;
-  padding: .3em;
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-.font-awesome {
-font-family: 'Amatic SC', cursive;
-font-size: 1.5em;
+#wrapper.toggled {
+    padding-left: 250px;
 }
 
-.menu li a {
-  font-size: 1em;
-  text-decoration: none;
-  vertical-align: top;
-  color: black;
-  display: inline-block;
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-top: -20px;
 }
 
-.content {
-  clear: both;
-  width: 100%;
-  height: 100%;
-  min-height: 500px;
-  overflow: auto;
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
 }
 
-.content-main {
-    font-family: PT serif;
-    color: black;
-    font-size: 1em;
-    text-align: center;
-    vertical-align: middle;
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
 }
 
-.nz {
-  height: 15em;
-  width: 22.5em;
-  display: inline-block;
-  margin-right: 1em;
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
 }
 
-.left {
-  text-align: left;
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.1em;
 }
 
-.small-button {
-  height: 16px;
-  width: 16px;
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
 }

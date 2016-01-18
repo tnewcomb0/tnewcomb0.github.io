@@ -1,54 +1,121 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Web Template">
+  <meta name="author" content="Trevor Newcomb">
+  <!-- Bootstrap CSS file -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica+SC' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
-  <title> Blog Week 8 </title>
+  <title> Trevor's DBC Website </title>
 </head>
-<header class="header">
-  <nav>
-    <div>
-      <h1 class="menu-title">Trevor Newcomb</h1>
-      <ul class="menu">
-        <li><a href="http://tnewcomb0.github.io/">Home</a></li>
-        <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
-        <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
-        <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
-        <li><a href="#"><img class ="small-button" src="../imgs/twitter.png"></a></li>
-        <li><a href="#" class="lnk-in"><img class ="small-button" src="../imgs/linkedin.png"></a></li>
-        <li><a href="https://www.facebook.com/trevor.k.newcomb"><img class ="small-button" src="../imgs/facebook.png"></a></li>
-        <li><a href="https://github.com/tnewcomb0"><img class ="small-button" src="../imgs/github.png"></a></li>
-        <li><a href="mailto:tnewcomb0@gmail.com?Subject=Greetings"><img class ="small-button" src="../imgs/Email.png"></a></li>
-      </ul>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://tnewcomb0.github.io/">Trevor Newcomb</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://tnewcomb0.github.io/">Home</a></li>
+          <li><a href="http://tnewcomb0.github.io/projects/index.html">Projects</a></li>
+          <li><a href="http://tnewcomb0.github.io/about.html">About Me</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/index.html">Blog</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <input type="text" class="form-control" placeholder="Search...">
+        </form>
+      </div>
     </div>
   </nav>
-</header>
-<container>
-<h1>How the Internet Works</h1>
-<body>
-  <p>
-    The Internet is a very complicated thing. It is what connects the world, far more than any other medium. We all use it (all the time), but do we really have an understanding of how it works? I'll try to break it down a little and explain the many processes behind it. This is based on older information, in order to keep it a little simpler.
-  </br></p>
-  <p>
-    First, we'll start with internet addresses, and expand on our understanding from there. This address is known as an IP address (IP stands for Internet Protocol). IP addresses are in the form nnn.nnn.nnn.nnn where nnn must be a number from 0 - 255. This is quite similar to your home address, it identifies where to find you. If something (in this case information) needs to be sent to you, your IP address is the navigation marker to find you. So when sending something between 2 computers, it goes from your IP address into "the internet" (which is what we will begin to dissect next) and then into another computer, located by their IP address.
-  </p>
-  <p>
-    Now, we have the beginning and end of the process, but what's in the middle? An example should serve here: Let's say your IP address is 1.2.3.4 and you want to send a message to the computer 5.6.7.8. The message you want to send is "Hello computer 5.6.7.8!". The message must be translated from alphabetic text into electronic signals, transmitted over the Internet, then translated back into alphabetic text. How is this accomplished? Through the use of a protocol stack. Every computer needs one to communicate on the Internet and it is usually built into the computer's operating system (i.e. Windows, Unix, etc.). The protocol stack used on the Internet is refered to as the TCP/IP protocol stack because of the two major communication protocols used. There are 4 layers to the stack:
-    <pre>
-      Application Protocols Layer-   Protocols specific to applications such as WWW, e-mail, FTP, etc.
+  <body>
 
-      Transmission Control Protocol-  Layer TCP directs packets to a specific application on a computer using a port number.
+    <div id="wrapper">
 
-      Internet Protocol Layer-  IP directs packets to a specific computer using an IP address.
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li><a href="http://tnewcomb0.github.io/blog/git.html">Git</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/html-reflection.html">HTML</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/css-concepts.html">CSS</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/arrays-hashes.html">Ruby- Arrays and Hashes</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/enumerable-methods.html">Ruby- The inject Method</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/ruby-classes.html">Ruby- Classes</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/JavaScript.html">JavaScript vs. Ruby</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/tech.html">How the Internet Works</a></li>
+          <li><a href="http://tnewcomb0.github.io/blog/website-reflection.html">A Reflection on my Website</a></li>
+        </ul>
+      </div>
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>How the Internet Works (Abridged)</h1>
+              <div class="row">
+                <div class="group1 col-sm-6 col-md-6">
+                  <span class="glyphicon glyphicon-folder-open"></span>  <a href="#">Internet</a>
+                  <span class="glyphicon glyphicon-bookmark"></span> <a href="#">History</a>,
+                  <a href="#">Tech</a>
+                </div>
+                <div class="group2 col-sm-6 col-md-6">
+                  <span class="glyphicon glyphicon-pencil"></span> <a href="singlepost.html#comments">0 Comments</a>
+                  <span class="glyphicon glyphicon-time"></span> November 27th, 2015
+                </div>
+              </div><br>
+              <div class="blog-text">
+              <p>
+                The Internet is a very complicated thing. It is what connects the world, far more than any other medium. We all use it (all the time), but do we really have an understanding of how it works? I'll try to break it down a little and explain the many processes behind it. This is based on older information, in order to keep it a little simpler.
+              </br></p>
+              <p>
+                First, we'll start with internet addresses, and expand on our understanding from there. This address is known as an IP address (IP stands for Internet Protocol). IP addresses are in the form nnn.nnn.nnn.nnn where nnn must be a number from 0 - 255. This is quite similar to your home address, it identifies where to find you. If something (in this case information) needs to be sent to you, your IP address is the navigation marker to find you. So when sending something between 2 computers, it goes from your IP address into "the internet" (which is what we will begin to dissect next) and then into another computer, located by their IP address.
+              </p>
+              <p>
+                Now, we have the beginning and end of the process, but what's in the middle? An example should serve here: Let's say your IP address is 1.2.3.4 and you want to send a message to the computer 5.6.7.8. The message you want to send is "Hello computer 5.6.7.8!". The message must be translated from alphabetic text into electronic signals, transmitted over the Internet, then translated back into alphabetic text. How is this accomplished? Through the use of a protocol stack. Every computer needs one to communicate on the Internet and it is usually built into the computer's operating system (i.e. Windows, Unix, etc.). The protocol stack used on the Internet is refered to as the TCP/IP protocol stack because of the two major communication protocols used. There are 4 layers to the stack:
+                <br><p>
+                  Application Protocols Layer-   Protocols specific to applications such as WWW, e-mail, FTP, etc.
 
-      Hardware Layer-  Converts binary packet data to network signals and back.
-    </pre>
-  </p>
-  <p>
-    Now, the rest of the intervening process is handled by the data companies that own all the expensive computing and routing equipment, which would take a very long time to go into. For now, suffice it to say that they handle the data transfer between computers. I'll try and come back to this and expand upon it, but I'm 3 hours in on this exercise.
-  </p>
-</body>
-</container>
-</html>
+                  Transmission Control Protocol-  Layer TCP directs packets to a specific application on a computer using a port number.
+
+                  Internet Protocol Layer-  IP directs packets to a specific computer using an IP address.
+
+                  Hardware Layer-  Converts binary packet data to network signals and back.
+                </p><br>
+              </p>
+              <p>
+                Now, the rest of the intervening process is handled by the data companies that own all the expensive computing and routing equipment, which would take a very long time to go into. For now, suffice it to say that they handle the data transfer between computers. I'll try and come back to this and expand upon it, but I'm 3 hours in on this exercise.
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+
+    </div>
+    <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+  </body>
+  <div class="nav-margin navbar navbar-inverse navbar-fixed-bottom text-center">
+    <p class="footer-text">Copyright (c) Trevor Newcomb</p>
+    <p class="footer-text">Contact information: <a href="mailto:tnewcomb0@gmail.com">tnewcomb0@gmail.com</a></p>
+  </div>
+  </html>
